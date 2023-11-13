@@ -1,0 +1,222 @@
+*{margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+  /* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+   .nav-container li{
+  list-style-type: none;
+}
+.nav-container a{text-decoration: none;
+color: black;}
+
+
+.nav-container{
+  background-color: aliceblue;
+  height: 8vh;
+  padding: 10px;
+
+
+}
+nav{
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: black;
+  
+}
+.logo{
+  height: 4vh;
+  align-items: center;
+  /* margin-bottom: 3vh; */
+  transform: translatey(25%);
+}
+.logo img{
+  height: 100%;
+  
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+justify-content: space-around;
+transform: translatey(18%);
+width: 65%;
+}
+
+.nav-links li a:hover{
+  color: aqua;
+  transform: scale(1.4);
+}
+
+.darkmode{margin-top:1.5vh;
+  padding-right: 3vh;
+  /* background-color: aqua; */
+  width: 5%;
+  
+  }
+
+.dark-mode {
+  background-color: #000;
+  color: #fff;
+  
+}
+
+@media screen and (max-width:840px){
+ .nav-links{
+  display: none;
+  position: absolute;
+  top: -5vh;
+  right: 0;
+  background-color: rgb(166, 21, 58);
+  flex-direction: column;
+  height: 75vh;
+  transform: translatex(100%);
+  
+ }
+ .threeline{display: block;}
+}
+
+.threeline{
+  height: 2.5vh;
+  width: 2.5vh;
+  transform: translatey(65%);
+display: none;
+}
+.line1,.line2,.line3{height: 30%;
+  width: 100%;
+  margin-top: 2px;
+  background-color:rgb(18, 18, 18);
+  border-radius:0.5vh; 
+
+}
+
+/* --------------------------------------
+   ABOUT SECTION
+   -------------------------------------- */
+
+.image-zoom-container {
+  overflow: hidden;
+  height: 50vh;
+  width: 50vh;
+  padding-right: 4vh;
+}
+
+.zoomable-image {
+  width: 100%; 
+  height: 100%; 
+  transition: transform 0.3s; 
+}
+
+.zoomable-image:hover {
+  transform: scale(1.2); 
+}
+
+/* --------------------------------------
+   PRODUCT PAGE
+   -------------------------------------- */
+
+   .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Gap between products */
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details {
+    text-align: left;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+}
+.product-details li{list-style-type: none;
+    
+}
+.gold{display: flex;
+height: 6vh;
+width: 6vh;}
+
+.portfolio{text-align: center;
+gap: 10px;}
+.redx{text-align: center;
+justify-content: space-between;}
+
+/* --------------------------------------
+   FAQS
+   -------------------------------------- */
+   .FRQUENT{
+    padding-left: 26vh;
+   }
+   .questions-item {
+    background-color: #fff;
+    border-radius: 0.25rem;
+    height: 30vh;
+    width: fit-content;
+    padding-left: 25vh;
+    
+    /* display: grid; */
+}
+.faq{
+  /* display: flex; */
+    list-style-type: none;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 0.75rem 0.5rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: #000;
+}
+  
+#map{
+  height: 30vh;
+  width: 70vw;
+}
+
+
+.answer {
+    display: none;
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+/* .FAQ1{
+justify-content:space-between;
+cursor: pointer;
+list-style-type: none; */
+/* width: 80%; */
+/* margin: auto;
+height: 100%; */
+/* display: flex; */
+/* padding-left: 70vh;
+margin-top: vh;
+border: black;}
+
+.FAQ2{
+  padding-right: 70vh;
+  margin-top: -15vh;
+} */
