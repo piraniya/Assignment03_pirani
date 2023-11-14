@@ -118,6 +118,21 @@ display: none;
 }
 
 /* --------------------------------------
+   AABOUT PAGE
+   -------------------------------------- */
+   .image-zoom-container {
+     transition: transform .2s;
+    margin: 0 auto;
+  }
+  
+  .image-zoom-container :hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); 
+  }
+
+
+/* --------------------------------------
    PRODUCT PAGE
    -------------------------------------- */
 
@@ -193,17 +208,42 @@ justify-content: space-between;}
 }
   
 #map{
-  height: 30vh;
+  height: 35vh;
   width: 70vw;
 }
-
-
 .answer {
     display: none;
     background-color: green;
     color: white;
     padding: 10px;
 }
+/* --------------------------------------
+   CLIENTS
+   -------------------------------------- */
+.review{
+  text-align: center;
+  height: 90vh;
+  margin-top: 100px;
+
+}
+.review .review-slider{
+  outline:#000000 ;
+  outline-offset: -5rem;
+  
+}
+.review .review-slider:hover{
+  outline:#faf7f7 ;
+  outline-offset: 3rem;
+}
+.swiperwrapper{
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 50px;
+
+}
+
 /* .FAQ1{
 justify-content:space-between;
 cursor: pointer;
