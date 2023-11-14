@@ -188,28 +188,38 @@ justify-content: space-between;}
     padding-left: 26vh;
    }
    .questions-item {
-    background-color: #fff;
+    
     border-radius: 0.25rem;
     height: 30vh;
-    width: fit-content;
+    width: 200vh;
     padding-left: 25vh;
     
-    /* display: grid; */
+    
+    
 }
 .faq{
-  /* display: flex; */
+  
     list-style-type: none;
     align-items: center;
     column-gap: 0.5rem;
     padding: 0.75rem 0.5rem;
-    cursor: pointer;
-    font-size: 1.25rem;
-    color: #000;
+   
 }
+ 
+.ques1{
+  padding-left: 85vh;
+  margin-top: -21vh;
   
+}
+
+/* --------------------------------------
+   map
+   -------------------------------------- */
 #map{
-  height: 35vh;
-  width: 70vw;
+  height: 40vh;
+  width: 132vh;
+  
+  margin-left:28vh;
 }
 .answer {
     display: none;
@@ -220,21 +230,11 @@ justify-content: space-between;}
 /* --------------------------------------
    CLIENTS
    -------------------------------------- */
-.review{
+ .review{
   text-align: center;
-  height: 90vh;
-  margin-top: 100px;
 
-}
-.review .review-slider{
-  outline:#000000 ;
-  outline-offset: -5rem;
-  
-}
-.review .review-slider:hover{
-  outline:#faf7f7 ;
-  outline-offset: 3rem;
-}
+}  
+
 .swiperwrapper{
   display: grid;
   grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));
@@ -244,19 +244,3 @@ justify-content: space-between;}
 
 }
 
-/* .FAQ1{
-justify-content:space-between;
-cursor: pointer;
-list-style-type: none; */
-/* width: 80%; */
-/* margin: auto;
-height: 100%; */
-/* display: flex; */
-/* padding-left: 70vh;
-margin-top: vh;
-border: black;}
-
-.FAQ2{
-  padding-right: 70vh;
-  margin-top: -15vh;
-} */

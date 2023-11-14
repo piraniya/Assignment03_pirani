@@ -26,7 +26,7 @@ faqItems.forEach((item) => {
 function initMap() {
   var options= {
     zoom:20,
-    center:{lat:9.611751,lng:80.029907}
+    center:{lat:9.67384902843599,lng:80.02121670696229}
   }
   var googlemap = new google.maps.Map(document.getElementById("map"), options);
 }
