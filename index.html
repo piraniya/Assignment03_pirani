@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Plentex</title>
     <link rel="stylesheet" href="styles.css">
     <link href="Assects/bootstrap-5.3 (1).2-dist (2)/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -12,8 +12,8 @@
 </head>
 <body>
 
-     
-
+   <!-- ======= Nav Section Start======= -->   
+ <section id="Home">
 <div class="nav-container">
   <nav>
     <div class="logo">   
@@ -22,11 +22,12 @@
     </div>
 
     <ul class="nav-links">
-      <li><a class="nav-link active" href="Home">Home</a></li>
-      <li><a class="nav-link active"  href="About">About</a></li>
-      <li><a class="nav-link active" href="Products">Products</a></li>
-      <li><a class="nav-link active" href="FAQS">FAQs</a></li>
-      <li><a class="nav-link active" href="Contact Us">Contact Us</a></li>
+      <li><a class="nav-link active" href="#Home">Home</a></li>
+      <li><a class="nav-link active"  href="#About">About</a></li>
+      <li><a class="nav-link active" href="#Products">Products</a></li>
+      <li><a class="nav-link active" href="#FAQS">FAQs</a></li>
+      <li><a class="nav-link active" href="#Contact Us">Contact Us</a></li>
+      <li><a class="nav-link active" href="#Team">Team</a></li>
     </ul>
     <div class="darkmode">
     <i class="fas fa-moon change-theme" id="theme-button" onclick="darkMode()"></i></div>
@@ -41,17 +42,17 @@
     </div>
   </nav>
 </div>
-
-
-
-
+ </section>
+   <!-- ======= Nav Section End ======= -->   
       
-      <!-- ======= Hero Section ======= -->
+      <!-- ======= Hero Section Start======= -->
     </br></br></br>
-  
-<section id="hero" class="d-flex align-items-center">
+    
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
     <div class="container">
-      <div class="row gy-4">
+       <div class="row">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1>Plants will make </br>
              your life better</h1></br>
@@ -66,11 +67,10 @@
         </div>
       </div>
     </div>
+        </div>
   
-  </section> </br> </br> </br>
   
-  <section id="hero" class="d-flex align-items-center">
-
+        <div class="carousel-item">
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" >
@@ -87,12 +87,26 @@
       </div>
     </div>
   </div>
+    </div>
+    </div>
+  <button class="carousel-control-prev" type="button"  data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      
+    
 
-  </section> </br> </br> </br>
+</br> </br> </br>
   
+      <!-- ======= Hero Section End======= -->
   
-  <!-- About section -->
-  <section id="about" class="about">
+   <!-- ======= About Section Start======= -->
+  <section id="About" class="about">
     <div class="container">
         <div class="row justify-content-between">
         <div class="col-lg-5 d-flex align-items-center justify-content-center about-img" >
@@ -124,15 +138,19 @@
         </div>  
       </div>
     </section></br>
-    <!-- ======= portfolio section ======= -->
+
+ <!-- ======= About Section End======= -->
+
+    <!-- ======= Portfolio Section Start ======= -->
+    <section id="Products">
     <div class="portfolio">
    <div class="redx" ><h1>OUR PRODUCTS</h1></div>
-    <button id="">Featured</button>
-    <button id="">Bestseller</button>
-    <button id="">Latest</button></div>
+    <button onclick="filterGallery('Featured')">Featured</button>
+    <button onclick="filterGallery('Bestseller')">Bestseller</button>
+    <button onclick="filterGallery('Latest')" >Latest</button></div>
    
     <div class="image-gallery">
-        <div class="product">
+        <div class="product Featured">
             <img src="Assects/img02/img/product1.png" alt="Product 1">  
             <div class="product-details">
                 <h2 style=" font-style: italic;">America Marigoid</h2>
@@ -146,7 +164,7 @@
             </div>
         </div>
 
-        <div class="product">
+        <div class="product Bestseller">
             <img src="Assects/img02/img/product2.png" alt="Product 1">
             <div class="product-details">
                 <h2 style=" font-style: italic;">Black Eyed Susan</h2>
@@ -159,7 +177,7 @@
               <li><img src="Assects/img02/img/icons8-star-48.png" alt=""></li></div>
             </div>
         </div>
-        <div class="product">
+        <div class="product Latest">
             <img src="Assects/img02/img/product3.png" alt="Product 1">
             <div class="product-details">
                 <h2 style=" font-style: italic;">Bleeding Heart </h2>
@@ -172,7 +190,7 @@
               <li><img src="Assects/img02/img/icons8-star-48.png" alt=""></li></div>
             </div>
         </div>
-        <div class="product">
+        <div class="product Featured">
             <img src="Assects/img02/img/product4.png" alt="Product 1">
             <div class="product-details">
                 <h2 style=" font-style: italic;">Butterfly weed</h2>
@@ -188,7 +206,7 @@
       
         
     </div>
-    <div class="image-gallery">
+    <div class="image-gallery Featured">
         <div class="product">
     <img src="Assects/img02/img/product5.png" alt="Product 1">
     <div class="product-details">
@@ -202,7 +220,7 @@
         <li><img src="Assects/img02/img/icons8-star-48.png" alt=""></li></div>
     </div>
 </div>
-<div class="product">
+<div class="product Bestseller">
     <img src="Assects/img02/img/product6.png" alt="Product 1">
     <div class="product-details">
         <h2 style=" font-style: italic;">Doublefile </h2>
@@ -215,7 +233,7 @@
       <li><img src="Assects/img02/img/icons8-star-48.png" alt=""></li></div>
     </div>
 </div>
-<div class="product">
+<div class="product Bestseller">
     <img src="Assects/img02/img/product1.png" alt="Product 1">
     <div class="product-details">
         <h2 style=" font-style: italic;">Bloody Cranesbill</h2>
@@ -228,7 +246,7 @@
       <li><img src="Assects/img02/img/icons8-star-48.png" alt=""></li></div>
     </div>
 </div>
-<div class="product">
+<div class="product Latest">
     <img src="Assects/img02/img/product2.png" alt="Product 1">
     <div class="product-details">
         <h2 style=" font-style: italic;">Feether Reed </h2>
@@ -242,15 +260,17 @@
     </div>
 </div>
 
-    </div></br> </br>
+    </div>
+  </section>
+  </br> </br>
     <!-- ======= PORTFOLIO SECTION END ======= -->
 
-  <!-- ======= FRQUENT QUESTION SECTION ======= -->
-  <section id ="FAQ" >
+  <!-- ======= FRQUENT QUESTION SECTION Start ======= -->
+  <section id ="FAQS" >
     
+    <div class="container">
+      <div class="row gy-4">
     <h4 style="text-align: center;">Some common Question </br>were often asked</h4></div>
-      <div class="col-md-6 questions-group">
-          <div class="questions-item">
     <div class="ques">
       <div class="faq">
         <li><h2>+ Why flowers are falling off or dying?</h2></li>
@@ -271,6 +291,7 @@
 
     </div>
   
+          
 
 <div class="ques1">
   <div class="faq">
@@ -291,13 +312,19 @@
         Ensure that your plant's pot has proper drainage holes and that the soil is well-draining.</div>
   </div>
 </div>
-  
           </div>
-      </div>
-    </div>
+      </div> 
+          
+      
+    
 </section>
 </br> </br> </br> </br> </br> </br> </br>
-      <!-- ======= CLIENTS START ======= -->
+
+<!-- ======= FRQUENT QUESTION SECTION End ======= -->
+
+
+      <!-- ======= CLIENTS Section START ======= -->
+  <section id="Team">    
 <section class="testminoals">
   <div class="review">
     <h1>WHAT SAY CLIENTS</h1>
@@ -336,12 +363,13 @@ Bachelor's degree in graphic design from Delhi Institute of Design(2013)
         </div>
 
       </div>
+    </section>
+      <!-- ======= CLIENTS Section END ======= -->
 
-      <!-- ======= CLIENTS END ======= -->
-
-   <!-- =======CONTACT US START======= -->
+   <!-- =======CONTACT US Section START======= -->
+   <section id="Contact Us">
 <div class="contact" style="background-clip: padding-box;">
-<div class="row my-5 main-row form-shdow "   style="padding-left: 29vh;" id="contact">
+  <div class="row my-5 main-row form-shdow "   style="padding-left: 29vh;" id="contact">
   <div class="col-md-4 bg-success p-5 text-white order-sm-first order-last">
       <h2>Contact Info</h2>
       <p>Fill the form amd our team will get to back to you within 24 hours.</p>
@@ -363,24 +391,24 @@ Bachelor's degree in graphic design from Delhi Institute of Design(2013)
   background:white;height: 100%; width: 50%;">
       <form class="row g-3 contactForm">
           <div class="col-md-6">
-              <label for="firstName" class="form-label">First Name <span>*</span></label>
+              <label for="firstName">First Name </label>
               <input type="text" class="form-control" id="firstName" required />
           </div>
           <div class="col-md-6">
-              <label for="lastName" class="form-label">Last Name <span>*</span></label>
+              <label for="lastName">Last Name </label>
               <input type="text" class="form-control" id="lastName" required />
           </div>
           <div class="col-md-6">
-              <label for="number" class="form-label">Number <span>*</span></label>
+              <label for="number">Number</label>
               <input type="number" class="form-control" id="number" required />
           </div>
           <div class="col-md-6">
-              <label for="email" class="form-label">Email <span>*</span></label>
+              <label for="email">Email </label>
               <input type="email" class="form-control" id="email" required />
               <div id="emailError" class="text-danger"></div>
           </div>
           <div class="col-12">
-              <label for="message" class="form-label">Message <span>*</span></label>
+              <label for="message" class="form-label">Message </label>
               <textarea class="form-control" id="message" required></textarea>
           </div>
           <div class="col-3 ms-md-auto">
@@ -396,12 +424,17 @@ Bachelor's degree in graphic design from Delhi Institute of Design(2013)
   </div>
 </div>
 </div>
+   </section>
+<!-- ======= Contact Us Section End ======= -->
+
+
 <!-- ======= MAP======= -->
+
 <div id="map"></div>
 </br> </br>
-<!-- ======= Contact Us End ======= -->
+<!-- ======= Map End ======= -->
 
-     <!-- ======= Footer start======= -->
+     <!-- ======= Footer start Section Start======= -->
 
      <footer id="footer">
 
@@ -435,7 +468,13 @@ Bachelor's degree in graphic design from Delhi Institute of Design(2013)
               <li style="list-style-type: none;"><i class="bx bx-chevron-right"></i> 1234-Peru</li>
               <li style="list-style-type: none;"><i class="bx bx-chevron-right"></i> La Liberated-43210</li>
               <li style="list-style-type: none;"><i class="bx bx-chevron-right"></i> 123-456-789</li>
-
+              <div class="threeline">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <div class="line4"></div>
+                <div class="line5"></div>
+                <div class="line6"></div>
             </ul>
           </div>
 
@@ -469,7 +508,8 @@ Bachelor's degree in graphic design from Delhi Institute of Design(2013)
     </div>
              <p class="text-center">&#169; Bedimcode. All rigths reserved</p>           
     
-  </footer><!-- End Footer -->
+  </footer>
+    <!-- ======= Footer start Section End======= -->
   
   <script src="script.js"></script>
     <script src="Assects/bootstrap-5.3 (1).2-dist (2)/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"> </script>
